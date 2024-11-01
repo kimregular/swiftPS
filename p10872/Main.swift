@@ -1,9 +1,14 @@
 let limit = Int(readLine()!)!
 
-var answer = 1
+if limit == 0 {
+    print(1)
 
-for i in 1...limit {
-    answer *= i
+} else {
+    var answer = 1
+
+    for i in 1...limit {
+        answer *= i
+    }
+
+    print(answer)
 }
-
-print(answer)
